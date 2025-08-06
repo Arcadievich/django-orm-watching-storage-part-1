@@ -10,6 +10,14 @@ Python3 should be already installed. Then use pip (or pip3, if there is a confli
 
 You also need to create a file `.env` in the same folder where the file is located `main.py`. In it, you must declare 3 environment variables: `SECRET_KEY`, `ADDRESS` and `PASSWORD`.
 
-- `SECRET_KEY` - It must contain the secret key to your website.
+
 - `ADDRESS` - Your website address.
+- `PORT` - Specify the connection port
+- `NAME` - Database name
+- `USER` - Username
 - `PASSWORD` - The password for the database on the website.
+- `SECRET_KEY` - It must contain the secret key to your website.
+
+## An example of a successful script launch
+
+![example](https://pouch.jumpshare.com/preview/7B9TmhLTEKVBxIt5N3hPprryWJJ-Hhe1cIDOPm63d5yTZn1nJeINkZ2IKxOZRWzHyCmXxW0aX77REwSJma5eRdDtWqSUXyOovbeVHxgnKOo)

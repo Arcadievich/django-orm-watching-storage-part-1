@@ -3,24 +3,21 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-host = os.getenv('ADDRESS')
-secret_key = os.getenv('SECRET_KEY')
-password = os.getenv('PASSWORD')
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': host,
-        'PORT': '5434',
-        'NAME': 'checkpoint',
-        'USER': 'guard',
-        'PASSWORD': password,
+        'HOST': os.getenv('ADDRESS'),
+        'PORT': os.getenv('PORT'),
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('USER'),
+        'PASSWORD': os.getenv('PASSWORD'),
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = secret_key
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 TIME_ZONE = 'Europe/Moscow'
 
